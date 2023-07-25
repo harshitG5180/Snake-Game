@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+/* Universal he  */
+*{                          
+    padding: 0;
+    margin: 0;
+}
+#body{
+    background: url("bg.jpg");
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#box{
+    background: linear-gradient(rgb(181, 242, 181) , rgb(219, 219, 164));
+    width: 90vmin ;
+    height: 95vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+#score{
+    position: absolute;
+    top : 20px;
+    right: 150px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+#HighScore{
+    position: absolute;
+    top : 60px;
+    right: 150px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+#snakeGame{
+    position: absolute;
+    top : 20px;
+    left: 50px;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+.head{
+    background : linear-gradient(red, yellow) ;
+    border:white solid;
+    border-radius: 9px;
+    transform: scale(1.15);
+}
+
+.snake_body{
+    background-color: purple;
+    border: white solid;
+    border-radius: 12px;
+    transform: scale(.9);
+}   
+
+.food{
+    background: linear-gradient(yellow , orange);
+    border: black solid;
+    border-radius: 50%;
+}
